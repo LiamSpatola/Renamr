@@ -1,6 +1,6 @@
-# Renamr #
-
 <img src="https://raw.githubusercontent.com/LiamSpatola/Images/main/Renamr.png">
+
+# Renamr #
 
 A lightweight piece of software for renaming files in bulk from the command line.
 
