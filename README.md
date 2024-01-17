@@ -5,9 +5,7 @@
 A lightweight piece of software for renaming files in bulk from the command line.
 
 ## Installation ##
-Begin by unzipping the .zip file.
-<br>
-The just navigate to the Renamr folder in the command line like this:
+Navigate to the folder where you downloaded Renamr to in the command line like this:
 
 <img src="https://raw.githubusercontent.com/LiamSpatola/Images/main/Renamr1.png">
 
@@ -15,9 +13,9 @@ NOTE: Your path will be different to the one shown above. Remember to copy your 
 
 ## Bulk Renaming ##
 You need to have a new directory with the files you want to rename.
-<br> WARNING: This program will rename EVERYTHING in the folder it is given. Remember to only put files you want renamed in the folder.
 
-<br>
+WARNING: This program will rename EVERYTHING in the folder it is given. Remember to only put files you want renamed in the folder.
+
 The software accepts 2 arguments. The first is the file path to the folder (mentioned above) and the second is the new name.
 
 The command should be formatted like this:
