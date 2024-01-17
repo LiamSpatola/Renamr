@@ -5,7 +5,7 @@
 A lightweight piece of software for renaming files in bulk from the command line.
 
 ## Installation ##
-Install the software via the `Renamr-2.0.0-Installer.msi` installer.
+Install the software via the `Renamr_2.0.0_Installer.msi` installer.
 
 ## Command Usage ##
 The command should be used as follows:
