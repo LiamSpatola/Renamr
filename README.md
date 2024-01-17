@@ -5,30 +5,34 @@
 A lightweight piece of software for renaming files in bulk from the command line.
 
 ## Installation ##
-Navigate to the folder where you downloaded Renamr to in the command line like this:
+Install the software via the `Renamr-2.0.0-Installer.msi` installer.
 
-<img src="https://raw.githubusercontent.com/LiamSpatola/Images/main/Renamr1.png">
+## Command Usage ##
+The command should be used as follows:
 
-NOTE: Your path will be different to the one shown above. Remember to copy your path and not the one in the image above.
+```bash
+Renamr [OPTIONS] DIRECTORY NEWNAME DELIMETER
+```
 
-## Bulk Renaming ##
-You need to have a new directory with the files you want to rename.
+The `DIRECTORY` is the folder which contains the files you wish to rename.
 
-WARNING: This program will rename EVERYTHING in the folder it is given. Remember to only put files you want renamed in the folder.
+The `NEWNAME` is the name to remain the files to.
 
-The software accepts 2 arguments. The first is the file path to the folder (mentioned above) and the second is the new name.
+The `DELIMETER` is the seperator between the new name and number. For instance, if your new name is `Europe_Trip`, the file name would become for instance `Europe_Trip_1.txt`. The delimeter is the underscore in the above example.
 
-The command should be formatted like this:
-> Renamr.exe [FILE PATH] [NEW NAME]
->
-Where [FILE PATH] is the file path and [NEW NAME] is the name to rename the files to.
+## Further Options ##
 
-Here is what that looks like:
+Further options you can use are:
 
-<img src="https://raw.githubusercontent.com/LiamSpatola/Images/main/Renamr2.png">
+- `--skip-confirmation`: This option forgoes the usual confirmation to confirm the renaming operation.
+- `--verbose`: This option prints each file, and it's new name to the standard output.
+- `--help`: This option brings up the help page.
 
-NOTE: Your path and new name will be different to the one shown above. Remember to copy your path and your new name and not the one in the image above.
+## Warnings ##
 
+- ALL files inside the target folder WILL be renamed, and this cannot be undone. Please be careful to specify the correct target directory.
+
+- Please do not use a delimeter which is used elswhere for something else in windows. For example, do not use a `.` as a delimeter, a file extension, or a special character like `§`. This may cause windows to do something unexpected, or even corrupt the file. `_` and `-` are great delimeters to use instead.
 ## Licensing ##
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/LiamSpatola/Renamr">Renamr</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/LiamSpatola">LiamSpatola</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
