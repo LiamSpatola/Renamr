@@ -6,7 +6,7 @@ app = typer.Typer()
 
 
 @app.command()
-def renameFiles(directory: str, newname: str, delimeter: str, skip_confirmation: bool = typer.Option(default=False, help="Skip the usual confirmation of the renaming operation."), verbose: bool = typer.Option(default=False, help="Use verbose mode")):
+def renameFiles(directory: str, newname: str, delimeter: str, verbose: bool = typer.Option(default=False, help="Use verbose mode"), skip_confirmation: bool = typer.Option(default=False, help="Skip the usual confirmation of the renaming operation.")):
 
     counter = 0
     files = os.listdir(directory)
@@ -15,7 +15,8 @@ def renameFiles(directory: str, newname: str, delimeter: str, skip_confirmation:
     if not skip_confirmation:
         confirm = typer.confirm("This operation will rename everything in the target directory. Do you wish to proceed?")
         if not confirm:
-            typer.Abort()
+            print("EXITING...")
+            exit()
 
 
     for file in files:
